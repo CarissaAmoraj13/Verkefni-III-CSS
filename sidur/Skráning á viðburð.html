@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skráning á viðburði</title>
+
+    <link href="/styles.css" rel="stylesheet" type="text/css">
+
+    <!--Matemasie Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Matemasie&display=swap" rel="stylesheet">
+    <!--Sans Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+       <div class="wrapper">
+      
+        <div class="title">
+           <h1>Spilabúðin-Skráning á viðburð</h1> 
+        </div>
+        
+           <!--Valmynd-->
+       <nav class="navbar">
+        <ul>
+            <li> <a href="/index.html">Forsíða </a></li>
+            <li><a href="/sidur/spil.html">Spil</a></li>
+            <li><a href="/sidur/viðburðasíðu.html">Viðburðir</a></li>
+            <li> <a href="Skráning á viðburð.html">Skráning á viðburði</a></li>
+        </ul>
+    </nav>
+       
+
+    <!--Body-->
+    <div class="Body">
+    <br>
+    <p>Skráðu þig á viðburði hjá okkur!</p>
+    <br>
+    
+
+    <!--Lists-->
+    <h2>Viðburðir</h2>
+    <ul>
+        <li>Hvaða viðburð vilu koma á?
+           <form>
+            <select name="Viðburðir">
+                <option value="">Púslukvöld</option>
+                <option value="">Ticket to Ride</option>
+            </select>
+        </form>
+        </li>
+<br>
+       <li>Hvenær viltu koma á?
+            <form>
+                <input type="date">
+            </form>
+           
+        </li>
+ <br>       
+
+        <li>Klukkan hvað?</li> 
+            <form>
+                <label for="from-time">Frá:</label>
+                <select id="from-time" name="from-time">
+                    <option value="10:00">10:00</option>
+                    <option value="11:00">11:00</option>
+                    <option value="12:00">12:00</option>
+                    <option value="13:00">13:00</option>
+                    <option value="14:00">14:00</option>
+                    <option value="15:00">15:00</option>
+                    <option value="16:00">16:00</option>
+                    <option value="17:00">17:00</option>
+                    <option value="18:00">18:00</option>
+                    <option value="19:00">19:00</option>
+                    <option value="20:00">20:00</option>
+                    <option value="21:00">21:00</option>
+                    <option value="22:00">22:00</option>
+                    <option value="23:00">23:00</option>
+                    <option value="00:00">00:00</option>
+                </select>
+        
+                <label for="to-time">Til:</label>
+                <select id="to-time" name="to-time">
+                    <option value="10:00">10:00</option>
+                    <option value="11:00">11:00</option>
+                    <option value="12:00">12:00</option>
+                    <option value="13:00">13:00</option>
+                    <option value="14:00">14:00</option>
+                    <option value="15:00">15:00</option>
+                    <option value="16:00">16:00</option>
+                    <option value="17:00">17:00</option>
+                    <option value="18:00">18:00</option>
+                    <option value="19:00">19:00</option>
+                    <option value="20:00">20:00</option>
+                    <option value="21:00">21:00</option>
+                    <option value="22:00">22:00</option>
+                    <option value="23:00">23:00</option>
+                    <option value="00:00">00:00</option>
+                </select>
+            </form>
+        </li>
+<br>
+
+        <li>Hve mörg?
+            <form>
+                <select>
+                <option value="">1</option>
+                <option value="">2</option>
+                <option value="">3</option>
+                <option value="">4</option>
+                <option value="">5</option>
+                <option value="">6</option>
+                <option value="">7</option>
+                <option value="">8</option>
+                <option value="">9</option>
+                <option value="">10</option>
+                </select>
+            </form>
+        </li>
+<br>
+
+        <li>Viltu taka eitthvað fram?
+            <form>
+                <label for="comment"></label><br>
+                <textarea id="comment" name="comment" rows="5" cols="40" placeholder=""></textarea><br><br>
+            </form>
+        </li>
+
+    </ul>
+
+    <h2>Panta mat</h2>
+    <ul>
+        <li>Viltu einhvern mat?
+            <form>
+                <select>
+                    <option value="">Pizzusneið og gos</option>
+                    <option value="">Kaffi og Kaka</option>
+                    <option value="Engan mat"></option>
+                </select>
+            </form>
+
+        </li>
+
+        <!--box sem er hægt að haka í-->
+  <br>      
+        
+  <form>
+
+    <label class="checkbox" for="myCheckboxId">
+        <input class="checkbox__input" type="checkbox"  name="myCheckboxName" id="myCheckboxId">
+        <div class="checkbox__box"></div> Ofnæmi sem við ætum að vita af?
+    </label>
+    </form>
+        
+        
+<br>  
+
+    <li>Annað sem við eigum að vita?
+        <form>
+            <label for="comment"></label><br>
+            <textarea id="comment" name="comment" rows="5" cols="40" placeholder=""></textarea><br><br>
+            
+        </form>
+    </li>
+</ul>
+
+       
+    
+    <h2>Þínar upplýsingar</h2>
+    <ul>
+       
+            <form>
+                <label for="name">Nafn</label>
+                <br>
+                <input type="text" id="name" name="name" placeholder="">
+             <br><br>
+                <label for="email">Netfang</label>
+                <br>
+                <input type="text" id="email" name="email" placeholder="Laura@gmail.com">
+                <br> <br>
+              <label form="Sím">Sími</label>
+              <br>
+              <input type="text" id="sími" name="sími" placeholder="7756785">
+
+            </form>
+       
+        
+           
+
+
+       
+    </ul>
+
+    <h2>Samþykkja og panta</h2>
+    <ul>
+        
+        <form>
+
+            <label class="checkbox1" for="myCheckboxId1">
+                <input class="checkbox__input1" type="checkbox"  name="myCheckboxName" id="myCheckboxId1">
+                <div class="checkbox__box1"></div> Ég samþykki skilmála Spilabúðarinnar
+            </label>
+            </form>
+        <br>
+       <!--Senda Pöntun--> 
+            <input class="pantabutton" type="button" value="Panta" onclick="confirmSubmission()">
+        
+    </ul> 
+    <a href="/index.html"><button>Aftur á Forsíðu</button></a>
+
+</div>
+
+</div>
+    
+   
+
+          <!--Footer-->
+          <footer>
+            <div class="row" >
+    
+            <div class="col">
+                <h2>Opnunartími</h2>
+                <br>
+                <h3>Mánudagur</h3>
+                <p>Lokað</p>  
+                <h3>Þriðjudagur til fimmtudags</h3>
+                <p>14:00-22:00 Föstudaga 14:00-00:00</p> 
+                <h3>Laugardaga</h3>
+                <p>12:00-00:00 
+                    <h3>Sunnudaga</h3>
+                    <p>12:00-22:00</p>
+            </div>
+    
+            <div class="col">
+                <h2>Hér erum við</h2>
+                <br>
+                <p>Spilabúðin ehf.Spilgata 1 101 Reykjavík</p>
+                <p> <a href="Sími">Sími 123-4567</a>
+                <p><a href="spilabudin@example.com">spilabudin@example.org</a> </a></p>
+               
+            </div>
+                
+    
+            <div class="col">
+                <h2>Samfélagsmiðlar</h2>
+                <br>
+                <ul>
+                    <li><a href="Facebook.com">Facebook</a></li>
+                    <li><a href="YouTube.com">YouTube</a></li>
+                    <li><a href="Instagram.com">Instagram</a></li> 
+                </ul>
+            </div>
+            <hr>
+        </div>
+        </footer>
+</body>
+</html>
