@@ -1,0 +1,456 @@
+
+
+/* Setjum inn „reset“ sem fjarlægir margin og padding af öllu */
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Reiknum stærð á öllum boxum sem border-box */
+  html {
+    box-sizing: border-box;
+  }
+  /* og látum erfast á allt */
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+  
+  /* hjálpar class sem felur sjónrænt en skjálesarar lesa */
+  .sr-only:not(:focus):not(:active) {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+  }
+  
+  /* Almennt */
+  
+  /** Letur og stærðir **/
+  
+  /*** Grunnstærð er 16px ***/
+  html {
+    font-size: 16px;
+  }
+  
+  /*** Leturgerðir sem við sækjum úr fonts/ möppu ***/
+  @font-face {
+    .matemasie-regular {
+        font-family: "Matemasie", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+      }
+      
+  }
+  
+  @font-face {
+ 
+    
+    /* <uniquifier>: Use a unique and descriptive class name*/
+/* <weight>: Use a value from 300 to 800*/
+
+.open-sans-uniquifier {
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+    }
+  
+  
+  @font-face {
+    /* TODO Bæta við leturgerð */
+  }
+  
+  /*** Allt meginmál notar open sans ***/
+  html,
+  input,
+  select,
+  button {
+    /* TODO Skilgreina */
+  }
+  
+  /*** Allar fyrirsagnir nota Matemasie regular ***/
+  h1,
+  h2,
+  h3,
+  legend {
+    /* TODO Skilgreina */
+  }
+  
+  /** Lætur myndir aldrei taka meira pláss en foreldri skilgreinir **/
+ 
+  
+  /** Litur á hlekkjum erfist frá foreldri **/
+  a {
+    color: inherit;
+  }
+  
+  /**
+   * Eftirfarandi setur upp grunn umbrot (layout) síðu með flexbox.
+   * Við förum yfir flexbox í viku 4 en þangað til er hægt að nota þetta
+   * sem grunn og án breytinga.
+   * Athugið að til þess að þetta virki þar að setja <div class="wrapper"> utan um allt efni 
+   * innan <body>.
+   */
+   
+
+   
+      
+
+  /* Það sem fylgir er tillaga að uppbyggingu á selectorum fyrir verkefnið */
+  
+  /** Haus á síðum **/
+  
+  .wrapper .title {
+
+    font-family: "Matemasie", sans-serif;
+    font-weight: 400;
+    height:100px;
+    padding-top: 30px;
+    font-style: normal;
+    background-color: #cc99bb;
+    text-align: center;
+     }
+
+     .navbar{
+      height: 50px;
+      width: 100%;
+      justify-content: center;
+      padding-top: 0px;
+      padding-left: 430px;
+      background-color: #eebbdd;
+      text-align: center;
+      font-family: Arial, Helvetica, sans-serif;
+    
+    }
+    .wrapper .ul {
+      list-style-type: none;
+      padding: 0px;
+      margin: 0px;
+    }
+    .navbar a {
+      
+      padding:15px;
+      display: block;
+      text-align: center;
+      text-decoration: none;
+      font-weight: bold;
+    }
+     
+    .navbar a:hover {
+      background-color: aliceblue;
+      text-decoration: none;
+     
+    }
+    
+    .navbar li {
+      float: left;
+      padding-left: 25px;
+      list-style-type: none;
+      text-decoration: none;
+      
+    
+      
+    }
+
+ 
+ 
+    
+ 
+ 
+
+
+  /**Footer*/
+footer {
+  width: 100%;
+  bottom: 0;
+  background-color: #cc99bb;
+
+   }
+     .row {
+      width: 85%;
+      margin: auto;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: flex-start;
+      justify-content: space-between;
+     }
+
+     .col {
+      flex-basis: 25%;
+      padding:10px;
+     }
+
+     .col h2{
+      font-family: "Matemasie", sans-serif;
+      font-weight: 100px;
+      font-size: 20px;
+      font-style: normal;
+     }
+     .Body ul{
+      padding: 1%;
+      list-style-type:none;
+     }
+     .Body select {
+      width: 15%;
+      height: 15%;
+      padding: 1%;
+     }
+     .Body input {
+      width: 15%;
+      height: 15%;
+      padding: 1%;
+     }
+     li label {
+           margin-right: 1%;
+           vertical-align: middle;
+           font-size: 16px;
+           cursor: pointer;
+            }
+   .wrapper .Body .picture img {
+    position:relative;
+    right: 10%;
+    margin-top: 20px;
+    width: 300px;
+    height: 200px;
+    border-radius: 10px;
+    float: left;
+   }
+
+  
+  /** Meginmál og efni forsíðu **/
+  
+  main {
+    /* TODO Skilgreina */
+  }
+  
+  /* TODO Skilgreina aðra selectora fyrir meginmál of forsíðu */
+  
+
+  
+  /* Ef við notum section fyrir hvert svæði undir fót, þá er hægt að nota eftirfarandi */
+  footer > section {
+    display: inline-block;
+    /* Lætur efni byrja efst í línu, almennt myndum við nota flexbox hér! */
+    vertical-align: top;
+    /* TODO fleiri skilgreiningar */
+  }
+  
+  /* TODO Skilgreina aðra selectora fyrir fót */
+  
+  /** Spilasíða, töflustílar **/
+  
+  .wrapper .Body {
+    background-color: #f3dd99;
+    height: 100%;
+    min-height: 100vh;  
+  }
+
+  .Body p{
+  padding:1%;
+  margin-left: 5%;
+  font-size: 1rem;
+  }
+
+  .Body h1{
+    font-family: "Matemasie", sans-serif;
+    font-weight: 100px;
+    font-size: 20px;
+    font-style: normal;
+    margin-left: 6%;
+  }
+  .Body h2 {
+    font-family: "Matemasie", sans-serif;
+    padding: 1%;
+  }
+
+
+ /** Spil*/
+
+.wrapper img {
+  position:relative;
+  right: 250px;
+  margin-top: 20px;
+  width: 300px;
+  height: 200px;
+  border-radius: 10px;
+  float: right;  
+}
+
+.Body th{
+  background-color:#eebbdd;
+}
+
+#row1 {
+background-color:#eebbdd;
+}
+
+
+  
+  /** Viðburðir **/
+  
+.flex-container {
+  display: flex;
+  flex-direction: column; 
+  gap: 35px; 
+}
+
+
+.flex-box {
+ 
+  width: 100%; 
+  max-width: 80%; 
+  margin: auto; 
+}
+
+.flex-box h2 {
+  margin-left: 5%;
+  margin-bottom: 1%;
+  margin-top: 1%;
+}
+
+.flex-container img {
+  position: relative;
+  float: left;
+  margin-left: 25%;
+}
+
+.paragraph1 {
+  flex-grow: 1; 
+  width: 300px; 
+  max-width: 500px; 
+  font-size: 16px; 
+  line-height: 1; 
+  text-align: justify; 
+  margin:0; 
+  
+
+}
+
+
+/* Image and paragraph layout */
+.content {
+  display: flex;
+  align-items: flex-start;
+  margin-left: 20px;
+  margin-right: 5px;
+}
+
+
+
+/* Link style */
+.link:hover {
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.flex-container .link {
+  display: block;
+  margin-top: 2%;
+  text-align: left;
+  color: black;
+  text-decoration: none;
+  margin-left: 5%;
+  
+  
+}
+
+ 
+  
+
+  /** Skráningarform **/
+  
+  /**Checkbox*/
+ .checkbox {
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+  
+  
+ }
+ .checkbox__input {
+  display: none;
+ 
+ }
+ .checkbox__box {
+  width: 1.2em;
+  height: 1.2em;
+  border: 1px solid black;
+  background-color: white;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+  flex-shrink:0;
+  transition: background 0.15s, border-color 0.15s;
+
+ }
+ .checkbox__box::after {
+  content:'\2714';
+  color: black;
+  transform: scale(0);
+  transition: transform 0.15s;
+ }
+
+ .checkbox__input:checked + .checkbox__box {
+  background: #7fffD4;
+  border-color: #7fffD4;
+ }
+ .checkbox__input:checked + .checkbox__box::after {
+  transform: scale(1);
+ }
+ 
+ .checkbox1 {
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+  
+  
+ }
+ .checkbox__input1 {
+  display: none;
+ 
+ }
+ .checkbox__box1 {
+  width: 1.2em;
+  height: 1.2em;
+  border: 1px solid black;
+  background-color: white;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+  flex-shrink:0;
+  transition: background 0.15s, border-color 0.15s;
+
+ }
+
+
+ .checkbox__box1::after {
+  content:'\2714';
+  color: black;
+  transform: scale(0);
+  transition: transform 0.15s;
+ }
+
+ .checkbox__input1:checked + .checkbox__box1 {
+  background: #7fffD4;
+  border-color: #7fffD4;
+ 
+ }
+ .checkbox__input1:checked + .checkbox__box1::after {
+  transform: scale(1);
+ }
+ 
+ .pantabutton {
+  background-color: #cc99bb;
+ }
